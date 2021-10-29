@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="{{ url_for('static' , filename = 'css/main.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <form action="/searchBy/name" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="search">
+        </form>
+    </div>
+
+    <h2 id="results"><i>{{ num_results }}</i> results were found for "<i>{{  query  }}</i>"</h2>
+
+    <section id='crickerters_section'>
+        {% for hit in hits %}
+        <article class="search-result-row">
+            <li>Full Name: {{ hit._source.Full_Name }}</li>
+            <li>Born : {{ hit._source.Born }}</li>
+            <li>Age: {{ hit._source.Age }}</li>
+            <li>Batting Style : {{ hit._source.Batting_Style }}</span></li>
+            <li>Bowling Style : {{ hit._source.Bowling_Style }}</li>
+            <div>
+                <h3>Career :{{ hit._source.Carrer}}</h3>
+            </div>
+        </article>
+        {% endfor %}
+        </section>
+</body>
+</html>
