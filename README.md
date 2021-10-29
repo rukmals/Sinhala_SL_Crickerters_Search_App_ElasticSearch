@@ -17,8 +17,8 @@ The Corpus contain following fields ,
 5. Carrer
 
 ## Data 
-Original data -> crickerters.csv
-Translated data -> crickerters_sinhala_2.csv
-Data transfer to the elasticsearch -> data_translation.py
+* Original data -> crickerters.csv
+* Translated data -> crickerters_sinhala_2.csv
+* Data transfer to the elasticsearch -> data_translation.py
 
 
