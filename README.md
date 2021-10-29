@@ -8,4 +8,17 @@
 3. install elasticsearch -> https://pypi.org/project/elasticsearch/
 4. install Flask -> pip install Flask
 
+## Corpus 
+The Corpus contain following fields ,
+1. Full name
+2. Born ( Birthday and Birth Place)
+3. Batting Style
+4. Bowling Style
+5. Carrer
+
+## Data 
+Original data -> crickerters.csv
+Translated data -> crickerters_sinhala_2.csv
+Data transfer to the elasticsearch -> data_translation.py
+
 
