@@ -33,8 +33,7 @@ Elasticsearch analysers are used in indexing.
 2. Search by range
 * you can search year ranges like from 1969 to 1970 -> /searchBy/bd
 
-3. Multi search -> /search
-### you can search quries like, 
+3. Multi search -> /search , you can search quries like, 
 * 1963 ක්රීඩා කළ දකුණත් පිතිකරැවන් සහා දකුණත් මන්දගාමී පන්දු යවන්නන්
 * 1988 ක්රීඩා කළ කඩුලු රකින්නා
 
