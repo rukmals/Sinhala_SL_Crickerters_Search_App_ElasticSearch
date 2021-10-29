@@ -21,4 +21,20 @@ The Corpus contain following fields ,
 * Translated data -> crickerters_sinhala_2.csv
 * Data transfer to the elasticsearch -> data_translation.py
 
+## Indexing technique
+Elasticsearch analysers are used in indexing.
+
+## Main Use Cases
+1. Search by term
+* search by Name -> /searchBy/name
+  you can search by crickerters names such as දුලීප් මෙන්ඩිස් , අර්ජුන රණතුංග
+* search by Born -> /searchBy/born
+  you can search born year such as 1969 , අගෝස්තු 12 or born place කොළඹ
+2. Search by range
+* you can search year ranges like from 1969 to 1970 -> /searchBy/bd
+
+3. Multi search -> /search
+### you can search quries like, 
+* 1963 ක්රීඩා කළ දකුණත් පිතිකරැවන් සහා දකුණත් මන්දගාමී පන්දු යවන්නන්
+* 1988 ක්රීඩා කළ කඩුලු රකින්නා
 
